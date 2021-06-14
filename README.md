@@ -8,6 +8,6 @@ This project applies Pycaret and pre-trained Bio-BERT to the health-record de-id
 ### FE.ipynb
 In this notebook I load Word2Vec and BERT for feature extraction. I also added some other liguistic features such as pos tagging.
 ### NER with Pycaret.ipynb
-Pycaret code, it uses SMOTE to solve the imbalanced problem. compared 9 different machine learning models and LightGBM has the best performance.
+In this notebook, I aggregate the neighbor information of the target word as its extra feature and change sequence labeling task into a classification task. it uses SMOTE to solve the imbalanced problem and compared 9 different machine learning models. As a result, LightGBM has the best performance.
 ### BERT.ipynb
 Bi-LSTM with Pre-trained bio-bert on the raw data, the performance is not as good as LightGBM because it is difficult to solve calss imbalance in NER task for Neural network.
